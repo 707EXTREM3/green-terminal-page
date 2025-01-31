@@ -1,53 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
-</head>
-<style>
-    #screen{
-        position: relative; /*place position of absolute objects and can overlay each other inside the screen*/
-        width: 800px;
-        height: 500px;
-        background-color: green;
-    }
-    #scan, #bezel{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-    }
-    #scan{
-        opacity: 90%;
-    }
-    .noselect {
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-    #content{
-        font-family: VT323;
-        padding: 50px;
-        color: rgb(177, 253, 0);
-        font-size: 20px;
-        text-shadow: 1px 1px 2px rgb(160, 180, 130), 0 0 1em rgb(160, 180, 130), 0 0 0.2em rgb(160, 180, 130);
-    }
-</style>
-<body>
-    <div id="screen">
-        <img src="scanlines.png" id="scan" class="noselect">
-        <img src="bezel.png" id="bezel" class="noselect">
-        <div id="content">
-            s
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="scanlines.png" id="scan" class="noselect" />
+      <header>
+        <h1>FDJSAHFSAJNFLS PLEASE WORK</h1>
+        <pre id="planet">
+            ⠀⠀⢀⣀⡀⠘⢀⣀⠀⣀⠀⠀⠀⠀⣠⡀
+            ⠠⡪⠁⠄⢀⠟⠁⠀⠀⠀⠈⠢⠀⠀⠙⠁
+            ⠀⠑⠄⡑⢌⡀⠀⠀⠀⠀⠀⠀⡗⠠⡀⠀
+            ⠀⠀⠀⠈⠒⡬⢐⠢⠄⣀⠀⢠⠃⠱⡈⠢
+            ⠀⠀⠀⠀⠀⠈⠒⠨⠥⠶⠆⠩⠭⠥⠤⠐
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢰⡧⠀⠀⠀⠀
+        </pre>
+      </header>
+      <main>
+        <section id="path">
+          <p>PS C:\Users\Alan> cd documents</p>
+          <p>PS C:\Users\Alan\Documents> cd education</p>
+          <p>PS C:\Users\Alan\Documents\Education> ls</p>
+        </section>
+        <br />
+        <div><p id="box">DIRECTORY: EXPERIENCE</p></div>
+        <br />
+        <section id="lsContent">
+          <div id="spacing">
+            <p>ALURA</p>
+            <br />
+            <p>[APRIL 2024 | ONGOING]</p>
+            <p>
+              <br />
+              JAVASCRIPT: manipulating DOM elements;<br />
+              JAVASCRIPT: creating dynamic webpages;<br />
+              HTML & CSS;<br />
+              EXCEL: basics;<br />
+              PYTHON: basics; OOP;<br />
+            </p>
+          </div>
+          <div id="spacing">
+            <p>UFRGS</p>
+            <br />
+            <p>[AUG 2024 | CURRENT]</p>
+            <br />
+            <p>Physics degree.</p>
+          </div>
+        </section>
+        <br /><br />
+        <section id="path">
+          <p>PS C:\Users\Alan\Documents\Education> cd ..</p>
+          <p>PS C:\Users\Alan\Documents> cd experience</p>
+          <p>PS C:\Users\Alan\Documents\Experience> ls</p>
+        </section>
+        <br />
+        <div><p id="box">DIRECTORY: EXPERIENCE</p></div>
+        <br />
+        <section id="lsContent">
+          <div id="spacing">
+            <br />
+            <p>DEFENSORIA PÚBLICA DA UNIÃO</p>
+            <br />
+            <p>[JAN 2022 | DEC 2023]</p>
+            <br />
+            <p>
+              Learned about ticketing systems, to use the company's licensed
+              tools, to manage admin permissions, to set domains, aside from
+              user support and problem investigation.
+            </p>
+          </div>
+          <div id="spacing">
+            <br />
+            <p>DEFENSORIA PÚBLICA DA UNIÃO</p>
+            <br />
+            <p>[JAN 2024 | CURRENT]</p>
+            <br />
+            <p>
+              Aside from the Porto Alegre office, I handed support to the Canoas
+              Office during the period of the flood in 2024 when they didn't
+              have any IT crew and the office needed to go back to operations
+              after the disaster.
+            </p>
+          </div>
+        </section>
+      </main>
+      <aside>
+        <p>Right side content</p>
+      </aside>
     </div>
-</body>
+  </body>
 </html>
+
+<!-- -------------------
+<pre>
+    ⠀⠀⢀⣀⡀⠘⢀⣀⠀⣀⠀⠀⠀⠀⣠⡀
+    ⠠⡪⠁⠄⢀⠟⠁⠀⠀⠀⠈⠢⠀⠀⠙⠁
+    ⠀⠑⠄⡑⢌⡀⠀⠀⠀⠀⠀⠀⡗⠠⡀⠀
+    ⠀⠀⠀⠈⠒⡬⢐⠢⠄⣀⠀⢠⠃⠱⡈⠢
+    ⠀⠀⠀⠀⠀⠈⠒⠨⠥⠶⠆⠩⠭⠥⠤⠐
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢰⡧⠀⠀⠀⠀
+</pre>
+> -->
